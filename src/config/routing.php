@@ -6,6 +6,7 @@ $lesPages['accueil'] = "actionAccueil";
 $lesPages['mentions'] = "actionMentions";
 $lesPages['maintenance'] = "actionMaintenance";
 
+
 if ($db!=null){
   if(isset($_GET['page'])){
     // Nous mettons dans la variable $page, la valeur qui a été passée dans le lien

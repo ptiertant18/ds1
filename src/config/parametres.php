@@ -1,7 +1,7 @@
 <?php
   $config['serveur']='localhost';
-  $config['login'] = '';
-  $config['mdp'] ='';
-  $config['bd'] = '';
+  $config['login'] = 'root';
+  $config['mdp'] ='btsinfo';
+  $config['bd'] = 'DS1';
 ?>
 
