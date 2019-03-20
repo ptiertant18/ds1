@@ -1,7 +1,14 @@
 <?php
 
-function actionAccueil($twig){
-    echo $twig->render('index.html.twig', array());
+function actionAccueil($twig, $db){
+    
+    $form = array(); 
+    $utilisateur = new Utilisateur($db);
+    $liste = $utilisateur->select();
+    echo $twig->render('index.html.twig', array('form'=>$form,'liste'=>$liste));
+    
+    
+  
 }
 
 function actionConnexion($twig){
@@ -39,4 +46,6 @@ function actionApropos($twig){
 function actionMaintenance($twig){
     echo $twig->render('maintenance.html.twig', array());
 }
+
+
 ?>
